@@ -2,15 +2,14 @@
 
 ofSculptureViewer::ofSculptureViewer(string objectFileName)
 {
-    //AssimpModelLoader = new ofxAssimpModelLoader();
     model.loadModel(objectFileName);
-    model.setScale(0.25, 0.25, 0.25);
+    model.setScale(0.5, 0.5, 0.5);
     
     rotationType = 0;
     rotationAngle = 0.0;
-    rotationX = 0.2;
+    rotationX = 0;
     rotationY = 2;
-    rotationZ = 0.7;
+    rotationZ = 0;
 }
 
 void ofSculptureViewer::update()

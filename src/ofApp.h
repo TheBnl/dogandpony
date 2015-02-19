@@ -6,6 +6,7 @@
 #include "ofProgressBar.h"
 #include "ofSlideIndicator.h"
 #include "ofSculptureViewer.h"
+#include "ofSniffer.h"
 
 class ofApp : public ofBaseApp {
 
@@ -14,6 +15,7 @@ class ofApp : public ofBaseApp {
 		void setup();
 		void update();
 		void draw();
+        void exit();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -30,8 +32,10 @@ class ofApp : public ofBaseApp {
         ofxTimer *twohundredSecondTimer;
         ofxTimer *twentySecondTimer;
         ofxTimer *oneSecondTimer;
+        ofxTimer *msTimer;
         ofSpinner *spinner;
         ofProgressBar *progressBar;
         ofSlideIndicator *slideIndicator;
         ofSculptureViewer *sculptureViewer;
+        ofSniffer sniffer;
 };

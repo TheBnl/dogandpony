@@ -11,6 +11,7 @@
 		101B63C0A0ABC9A070367D66 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B9ECC2022EF78B79DAF5A05 /* ofxButton.cpp */; };
 		11032A9C7B676D6BDC5EBCA5 /* ofx3dModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A255E89B5F8EA5E82751141A /* ofx3dModelLoader.cpp */; };
 		166689985CC986E7FA80B075 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA000F829584842052F45A42 /* ofxBaseGui.cpp */; };
+		21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21508EC41A93C32800C2D8CE /* ofSniffer.cpp */; };
 		21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E771A8A659200161C31 /* ofSpinner.cpp */; };
 		21D89E801A8B9BF700161C31 /* ofxTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */; };
 		21D89E831A8BD0E000161C31 /* ofProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E811A8BD0E000161C31 /* ofProgressBar.cpp */; };
@@ -94,6 +95,8 @@
 		1789E6B6A8C11CA1468759BB /* ofx3DBaseLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofx3DBaseLoader.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofx3DModelLoader/src/ofx3DBaseLoader.h; sourceTree = SOURCE_ROOT; };
 		1DE04911DB4C867BD92C3E54 /* ofxTCPServer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTCPServer.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxNetwork/src/ofxTCPServer.cpp; sourceTree = SOURCE_ROOT; };
 		1E47223169425006CD348330 /* aiMatrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = aiMatrix3x3.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAssimpModelLoader/libs/assimp/include/aiMatrix3x3.h; sourceTree = SOURCE_ROOT; };
+		21508EC41A93C32800C2D8CE /* ofSniffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSniffer.cpp; sourceTree = "<group>"; };
+		21508EC51A93C32800C2D8CE /* ofSniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSniffer.h; sourceTree = "<group>"; };
 		21D89E771A8A659200161C31 /* ofSpinner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSpinner.cpp; sourceTree = "<group>"; };
 		21D89E781A8A659200161C31 /* ofSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSpinner.h; sourceTree = "<group>"; };
 		21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTimer.cpp; sourceTree = "<group>"; };
@@ -507,6 +510,8 @@
 				21D89E851A8BDA0B00161C31 /* ofSlideIndicator.h */,
 				21D89E881A8D0D1E00161C31 /* ofSculptureViewer.cpp */,
 				21D89E891A8D0D1E00161C31 /* ofSculptureViewer.h */,
+				21508EC41A93C32800C2D8CE /* ofSniffer.cpp */,
+				21508EC51A93C32800C2D8CE /* ofSniffer.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 			);
 			path = src;
@@ -699,6 +704,7 @@
 				CE1DE63D17374BCE4471F940 /* ofxPanel.cpp in Sources */,
 				C6AD90DF92A88969B000E139 /* ofxSlider.cpp in Sources */,
 				505F9F7F7DBF1D548465B5A4 /* ofxSliderGroup.cpp in Sources */,
+				21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */,
 				4EDF9A1F5BA38B064FC8E49F /* ofxToggle.cpp in Sources */,
 				FD713D3A8B43C6F77152A72B /* ofxTCPClient.cpp in Sources */,
 				497E6425A1C99E70CD723D92 /* ofxTCPManager.cpp in Sources */,
@@ -908,6 +914,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+					"/Users/bramdeleeuw/Desktop/Code/OSX/Libs/libpcap-0.9.4",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -993,6 +1000,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"/Users/bramdeleeuw/Desktop/Code/OSX/Libs/libpcap-0.9.4",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

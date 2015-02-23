@@ -12,6 +12,8 @@ public:
     void update();
     void draw(int x, int y);
     
+    std::vector<string> cropArray(vector<string> array, int cropAt);
+    
     void threadedFunction() {
         
         while(isThreadRunning())
@@ -19,8 +21,11 @@ public:
             
             for (string line; getline(std::cin, line);)
             {
-                //text += line + "\n";
+                //if (!line.empty()) {
+                lock();
                 inputLines.push_back(line);
+                unlock();
+                //}
             }
             
         }

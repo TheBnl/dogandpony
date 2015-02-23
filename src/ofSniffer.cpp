@@ -1,6 +1,6 @@
 #include "ofSniffer.h"
-#include <string>
-#include <iterator>
+//#include <string>
+//#include <iterator>
 
 ofSniffer::ofSniffer()
 {
@@ -12,17 +12,17 @@ void ofSniffer::update()
 {
     text = "";
     
-    if (inputLines.size() > 10) {
-        // make sure it is posibble to erase
-        inputLines.erase(inputLines.begin(), inputLines.end() - 10);
-    }
+    inputLines = cropArray(inputLines, 1000);
     
     for (int i = 0; i < inputLines.size(); i++)
     {
-        text += inputLines[i]+"\n";
+        if (!inputLines.at(i).empty()) {
+            text += inputLines.at(i)+" \n";
+        }
     }
 
 }
+
 
 void ofSniffer::draw(int x, int y)
 {
@@ -30,4 +30,14 @@ void ofSniffer::draw(int x, int y)
     inputFont.drawString(text, x, y - inputFont.stringHeight(text));
     ofDrawBitmapString("lines: " + ofToString(inputLines.size()), 10, 50);
     
+}
+
+
+std::vector<string> ofSniffer::cropArray(vector<string> array, int cropAt)
+{
+    if (array.size() > cropAt) {
+        array.erase(array.begin(), array.end() - cropAt);
+    }
+    
+    return array;
 }

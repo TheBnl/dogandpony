@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofBackground(0, 0, 0);
+    //ofBackground(0, 0, 0);
     
     msTimer = new ofxTimer();
     oneSecondTimer = new ofxTimer();
@@ -23,8 +23,10 @@ void ofApp::setup(){
     spinner = new ofSpinner();
     progressBar = new ofProgressBar( twentySecondTimer->getTimeLeftInMillis() );
     slideIndicator = new ofSlideIndicator( 10 );
+    sniffer = new ofSniffer();
+    sniffer->startThread();
     
-    sniffer.startThread();
+    slideTitle = new ofSlideTitle("THE MAN IN THE MIDDLE");
 }
 
 //--------------------------------------------------------------
@@ -33,17 +35,23 @@ void ofApp::update(){
     spinner->update( oneSecondTimer->getTimeLeftInMillis() );
     progressBar->update( twentySecondTimer->getTimeLeftInMillis() );
     slideIndicator->update( twentySecondTimer->getTimeLeftInMillis() );
-    sniffer.update();
+    sniffer->lock();
+    sniffer->update();
+    sniffer->unlock();
+    slideTitle->update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
     
     
-    sniffer.draw( 10, ofGetHeight() - 20 );
+    sniffer->draw( 10, ofGetHeight() - 20 );
+    
     spinner->draw( ofGetWidth() - 10, ofGetHeight() - 5 );
     progressBar->draw( 48, ofGetHeight() - 5 );
     slideIndicator->draw( 0, ofGetHeight() - 5 );
+    
+    slideTitle->draw();
     
     ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );
     ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), 10, 30 );
@@ -53,7 +61,7 @@ void ofApp::draw() {
 //--------------------------------------------------------------
 void ofApp::exit() {
     cout << "quiting app";
-    sniffer.stopThread();
+    sniffer->stopThread();
 }
 
 //--------------------------------------------------------------

@@ -13,6 +13,7 @@ public:
     void update();
     void draw(int x, int y);
     
+    
 private:
     
     ofxAssimpModelLoader model;

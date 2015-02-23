@@ -1,48 +1,33 @@
 #include "ofSniffer.h"
-#include <iostream>
-#include <stdio.h>
-#include <pcap.h>
+#include <string>
+#include <iterator>
 
 ofSniffer::ofSniffer()
 {
-    // brew installed programs don't run
-    //system("ngrep -d en1");
+    inputFont.loadFont("input-regular.ttf", 9);
 }
 
 
-void ofSniffer::update(float time)
+void ofSniffer::update()
 {
+    text = "";
     
-  
-    
-    
-    if (time <= 0)
-    {
-        //getline(cin, line);
-        //linesArray.push_back(line);
-        
-        //for (std::string line; std::getline(std::cin, line);) {
-            //std::cout << line << std::endl;
-          //  linesArray.push_back(line);
-            //cout << line << endl;
-        //}
+    if (inputLines.size() > 10) {
+        // make sure it is posibble to erase
+        inputLines.erase(inputLines.begin(), inputLines.end() - 10);
     }
     
-    
-    
-    
+    for (int i = 0; i < inputLines.size(); i++)
+    {
+        text += inputLines[i]+"\n";
+    }
+
 }
 
 void ofSniffer::draw(int x, int y)
 {
-    
-    for (int i = 0; i < linesArray.size(); i++)
-    {
         
-        ofDrawBitmapStringHighlight(linesArray[i], x, y);
-        
-    }
-    
-    ofDrawBitmapString( "Lines: " + ofToString( linesArray.size() ), 15, 60 );
+    inputFont.drawString(text, x, y - inputFont.stringHeight(text));
+    ofDrawBitmapString("lines: " + ofToString(inputLines.size()), 10, 50);
     
 }

@@ -3,6 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
+    ofBackground(0, 0, 0);
+    
     msTimer = new ofxTimer();
     oneSecondTimer = new ofxTimer();
     twentySecondTimer = new ofxTimer();
@@ -21,7 +23,6 @@ void ofApp::setup(){
     spinner = new ofSpinner();
     progressBar = new ofProgressBar( twentySecondTimer->getTimeLeftInMillis() );
     slideIndicator = new ofSlideIndicator( 10 );
-    sculptureViewer = new ofSculptureViewer("dc_lvl-1.obj");
     
     sniffer.startThread();
 }
@@ -32,19 +33,17 @@ void ofApp::update(){
     spinner->update( oneSecondTimer->getTimeLeftInMillis() );
     progressBar->update( twentySecondTimer->getTimeLeftInMillis() );
     slideIndicator->update( twentySecondTimer->getTimeLeftInMillis() );
-    sculptureViewer->update();
-    sniffer.update( msTimer->getTimeLeftInMillis() );
-    
+    sniffer.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
     
+    
+    sniffer.draw( 10, ofGetHeight() - 20 );
     spinner->draw( ofGetWidth() - 10, ofGetHeight() - 5 );
     progressBar->draw( 48, ofGetHeight() - 5 );
     slideIndicator->draw( 0, ofGetHeight() - 5 );
-    sculptureViewer->draw( ofGetWidth() - 150, 150 );
-    sniffer.draw(10, ofGetHeight() - 15);
     
     ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );
     ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), 10, 30 );

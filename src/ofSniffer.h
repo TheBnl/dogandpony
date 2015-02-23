@@ -4,36 +4,36 @@
 #include "ofMain.h"
 
 class ofSniffer : public ofThread {
-  
+    
 public:
     
     ofSniffer();
     
-    void update(float time);
+    void update();
     void draw(int x, int y);
     
     void threadedFunction() {
         
-        // start
-        
-        while(isThreadRunning()) {
+        while(isThreadRunning())
+        {
             
-            for (std::string line; std::getline(std::cin, line);) {
-                linesArray.push_back(line);
-                cout << line << endl;
+            for (string line; getline(std::cin, line);)
+            {
+                //text += line + "\n";
+                inputLines.push_back(line);
             }
-                
-            //cout << "thread running!";
+            
         }
         
-        // done
     }
     
-    
-    
 private:
-    string line;
-    std::vector<string> linesArray;
+    
+    ofTrueTypeFont inputFont;
+    
+    string text;
+    std::vector<string> inputLines;
+    
 };
 
 #endif

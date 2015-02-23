@@ -11,6 +11,7 @@
 		101B63C0A0ABC9A070367D66 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B9ECC2022EF78B79DAF5A05 /* ofxButton.cpp */; };
 		11032A9C7B676D6BDC5EBCA5 /* ofx3dModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A255E89B5F8EA5E82751141A /* ofx3dModelLoader.cpp */; };
 		166689985CC986E7FA80B075 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA000F829584842052F45A42 /* ofxBaseGui.cpp */; };
+		2103EA9B1A9698CA005FCC2D /* ofAnimatedImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EA991A9698CA005FCC2D /* ofAnimatedImage.cpp */; };
 		21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21508EC41A93C32800C2D8CE /* ofSniffer.cpp */; };
 		21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E771A8A659200161C31 /* ofSpinner.cpp */; };
 		21D89E801A8B9BF700161C31 /* ofxTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */; };
@@ -95,6 +96,8 @@
 		1789E6B6A8C11CA1468759BB /* ofx3DBaseLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofx3DBaseLoader.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofx3DModelLoader/src/ofx3DBaseLoader.h; sourceTree = SOURCE_ROOT; };
 		1DE04911DB4C867BD92C3E54 /* ofxTCPServer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTCPServer.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxNetwork/src/ofxTCPServer.cpp; sourceTree = SOURCE_ROOT; };
 		1E47223169425006CD348330 /* aiMatrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = aiMatrix3x3.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAssimpModelLoader/libs/assimp/include/aiMatrix3x3.h; sourceTree = SOURCE_ROOT; };
+		2103EA991A9698CA005FCC2D /* ofAnimatedImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofAnimatedImage.cpp; sourceTree = "<group>"; };
+		2103EA9A1A9698CA005FCC2D /* ofAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofAnimatedImage.h; sourceTree = "<group>"; };
 		21508EC41A93C32800C2D8CE /* ofSniffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSniffer.cpp; sourceTree = "<group>"; };
 		21508EC51A93C32800C2D8CE /* ofSniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSniffer.h; sourceTree = "<group>"; };
 		21D89E771A8A659200161C31 /* ofSpinner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSpinner.cpp; sourceTree = "<group>"; };
@@ -502,6 +505,8 @@
 			children = (
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				2103EA991A9698CA005FCC2D /* ofAnimatedImage.cpp */,
+				2103EA9A1A9698CA005FCC2D /* ofAnimatedImage.h */,
 				21D89E771A8A659200161C31 /* ofSpinner.cpp */,
 				21D89E781A8A659200161C31 /* ofSpinner.h */,
 				21D89E811A8BD0E000161C31 /* ofProgressBar.cpp */,
@@ -713,6 +718,7 @@
 				67FFC7A9FDB20CE6E01E34E0 /* ofxVectorGraphics.cpp in Sources */,
 				438B06EC00B19D6A71819CEB /* CreEPS.cpp in Sources */,
 				21D89E831A8BD0E000161C31 /* ofProgressBar.cpp in Sources */,
+				2103EA9B1A9698CA005FCC2D /* ofAnimatedImage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

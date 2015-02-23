@@ -7,6 +7,7 @@
 #include "ofSlideIndicator.h"
 #include "ofSculptureViewer.h"
 #include "ofSniffer.h"
+#include "ofAnimatedImage.h"
 
 class ofApp : public ofBaseApp {
 

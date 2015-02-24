@@ -1,6 +1,4 @@
 #include "ofSniffer.h"
-//#include <string>
-//#include <iterator>
 
 ofSniffer::ofSniffer()
 {
@@ -26,9 +24,10 @@ void ofSniffer::update()
 
 void ofSniffer::draw(int x, int y)
 {
-        
+
+    ofSetColor( 255, 255, 255, 255 );
     inputFont.drawString(text, x, y - inputFont.stringHeight(text));
-    ofDrawBitmapString("lines: " + ofToString(inputLines.size()), 10, 50);
+    //ofDrawBitmapString("lines: " + ofToString(inputLines.size()), 10, 50);
     
 }
 

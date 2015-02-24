@@ -13,6 +13,11 @@
 		166689985CC986E7FA80B075 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA000F829584842052F45A42 /* ofxBaseGui.cpp */; };
 		2103EA9B1A9698CA005FCC2D /* ofAnimatedImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EA991A9698CA005FCC2D /* ofAnimatedImage.cpp */; };
 		2103EA9E1A9BCAEA005FCC2D /* ofSlideTitle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EA9C1A9BCAEA005FCC2D /* ofSlideTitle.cpp */; };
+		2103EAA21A9BE6B4005FCC2D /* ofxBlurShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAA01A9BE6B4005FCC2D /* ofxBlurShader.cpp */; };
+		2103EAAD1A9BE999005FCC2D /* ofxAnimatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAA51A9BE999005FCC2D /* ofxAnimatable.cpp */; };
+		2103EAAE1A9BE999005FCC2D /* ofxAnimatableFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAA71A9BE999005FCC2D /* ofxAnimatableFloat.cpp */; };
+		2103EAAF1A9BE999005FCC2D /* ofxAnimatableOfColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAA91A9BE999005FCC2D /* ofxAnimatableOfColor.cpp */; };
+		2103EAB01A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAAB1A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp */; };
 		21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21508EC41A93C32800C2D8CE /* ofSniffer.cpp */; };
 		21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E771A8A659200161C31 /* ofSpinner.cpp */; };
 		21D89E801A8B9BF700161C31 /* ofxTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */; };
@@ -101,6 +106,16 @@
 		2103EA9A1A9698CA005FCC2D /* ofAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofAnimatedImage.h; sourceTree = "<group>"; };
 		2103EA9C1A9BCAEA005FCC2D /* ofSlideTitle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSlideTitle.cpp; sourceTree = "<group>"; };
 		2103EA9D1A9BCAEA005FCC2D /* ofSlideTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSlideTitle.h; sourceTree = "<group>"; };
+		2103EAA01A9BE6B4005FCC2D /* ofxBlurShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxBlurShader.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxBlurShader/ofxBlurShader.cpp; sourceTree = "<group>"; };
+		2103EAA11A9BE6B4005FCC2D /* ofxBlurShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxBlurShader.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxBlurShader/ofxBlurShader.h; sourceTree = "<group>"; };
+		2103EAA51A9BE999005FCC2D /* ofxAnimatable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxAnimatable.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatable.cpp; sourceTree = "<group>"; };
+		2103EAA61A9BE999005FCC2D /* ofxAnimatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxAnimatable.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatable.h; sourceTree = "<group>"; };
+		2103EAA71A9BE999005FCC2D /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxAnimatableFloat.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = "<group>"; };
+		2103EAA81A9BE999005FCC2D /* ofxAnimatableFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxAnimatableFloat.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableFloat.h; sourceTree = "<group>"; };
+		2103EAA91A9BE999005FCC2D /* ofxAnimatableOfColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxAnimatableOfColor.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableOfColor.cpp; sourceTree = "<group>"; };
+		2103EAAA1A9BE999005FCC2D /* ofxAnimatableOfColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxAnimatableOfColor.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableOfColor.h; sourceTree = "<group>"; };
+		2103EAAB1A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxAnimatableOfPoint.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableOfPoint.cpp; sourceTree = "<group>"; };
+		2103EAAC1A9BE999005FCC2D /* ofxAnimatableOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxAnimatableOfPoint.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableOfPoint.h; sourceTree = "<group>"; };
 		21508EC41A93C32800C2D8CE /* ofSniffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSniffer.cpp; sourceTree = "<group>"; };
 		21508EC51A93C32800C2D8CE /* ofSniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSniffer.h; sourceTree = "<group>"; };
 		21D89E771A8A659200161C31 /* ofSpinner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSpinner.cpp; sourceTree = "<group>"; };
@@ -258,6 +273,38 @@
 				219374A14594D121F27FED3A /* src */,
 			);
 			name = ofxNetwork;
+			sourceTree = "<group>";
+		};
+		2103EA9F1A9BE69A005FCC2D /* ofxBlurShader */ = {
+			isa = PBXGroup;
+			children = (
+				2103EAA01A9BE6B4005FCC2D /* ofxBlurShader.cpp */,
+				2103EAA11A9BE6B4005FCC2D /* ofxBlurShader.h */,
+			);
+			name = ofxBlurShader;
+			sourceTree = "<group>";
+		};
+		2103EAA31A9BE974005FCC2D /* ofxAnimatable */ = {
+			isa = PBXGroup;
+			children = (
+				2103EAA41A9BE97C005FCC2D /* src */,
+			);
+			name = ofxAnimatable;
+			sourceTree = "<group>";
+		};
+		2103EAA41A9BE97C005FCC2D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2103EAA51A9BE999005FCC2D /* ofxAnimatable.cpp */,
+				2103EAA61A9BE999005FCC2D /* ofxAnimatable.h */,
+				2103EAA71A9BE999005FCC2D /* ofxAnimatableFloat.cpp */,
+				2103EAA81A9BE999005FCC2D /* ofxAnimatableFloat.h */,
+				2103EAA91A9BE999005FCC2D /* ofxAnimatableOfColor.cpp */,
+				2103EAAA1A9BE999005FCC2D /* ofxAnimatableOfColor.h */,
+				2103EAAB1A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp */,
+				2103EAAC1A9BE999005FCC2D /* ofxAnimatableOfPoint.h */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 		219374A14594D121F27FED3A /* src */ = {
@@ -425,6 +472,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				2103EAA31A9BE974005FCC2D /* ofxAnimatable */,
+				2103EA9F1A9BE69A005FCC2D /* ofxBlurShader */,
 				21D89E8F1A8DF5AD00161C31 /* ofxObjLoader */,
 				21D89E761A8A62F600161C31 /* ofxTimer */,
 				9F66160B6D853AA730F370C2 /* ofx3DModelLoader */,
@@ -699,9 +748,12 @@
 				D5BE41C7C243194C6BCB43DA /* texture3DS.cpp in Sources */,
 				11032A9C7B676D6BDC5EBCA5 /* ofx3dModelLoader.cpp in Sources */,
 				21D89E861A8BDA0B00161C31 /* ofSlideIndicator.cpp in Sources */,
+				2103EAB01A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp in Sources */,
 				21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */,
 				21D89E971A8DF5FA00161C31 /* ofxObjLoader.cpp in Sources */,
+				2103EAA21A9BE6B4005FCC2D /* ofxBlurShader.cpp in Sources */,
 				456A6BD7B4A5718FECEEF1D7 /* ofxAssimpAnimation.cpp in Sources */,
+				2103EAAD1A9BE999005FCC2D /* ofxAnimatable.cpp in Sources */,
 				0A2E7DF3156849C0F0DCA208 /* ofxAssimpMeshHelper.cpp in Sources */,
 				21D89E941A8DF5E600161C31 /* glm.c in Sources */,
 				BFCAD4B78BA542461C3F76B5 /* ofxAssimpModelLoader.cpp in Sources */,
@@ -713,11 +765,13 @@
 				E54507412469F182A2278A83 /* ofxLabel.cpp in Sources */,
 				CE1DE63D17374BCE4471F940 /* ofxPanel.cpp in Sources */,
 				C6AD90DF92A88969B000E139 /* ofxSlider.cpp in Sources */,
+				2103EAAF1A9BE999005FCC2D /* ofxAnimatableOfColor.cpp in Sources */,
 				505F9F7F7DBF1D548465B5A4 /* ofxSliderGroup.cpp in Sources */,
 				21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */,
 				4EDF9A1F5BA38B064FC8E49F /* ofxToggle.cpp in Sources */,
 				2103EA9E1A9BCAEA005FCC2D /* ofSlideTitle.cpp in Sources */,
 				FD713D3A8B43C6F77152A72B /* ofxTCPClient.cpp in Sources */,
+				2103EAAE1A9BE999005FCC2D /* ofxAnimatableFloat.cpp in Sources */,
 				497E6425A1C99E70CD723D92 /* ofxTCPManager.cpp in Sources */,
 				263BE728163BB0A0DF13E722 /* ofxTCPServer.cpp in Sources */,
 				37E3F1E90FEA69705D41EF36 /* ofxUDPManager.cpp in Sources */,

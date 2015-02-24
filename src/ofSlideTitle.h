@@ -2,12 +2,13 @@
 #define _OF_SLIDE_TITLE
 
 #include "ofMain.h"
+//#include "ofxBlurShader.h"
 
 class ofSlideTitle {
   
 public:
     
-    ofSlideTitle(string text);
+    ofSlideTitle(string text, int _iterations, float _maxRange);
     
     void update();
     void draw();
@@ -20,9 +21,12 @@ private:
     ofPlanePrimitive titleShadow;
     float titleWidth;
     float titleHeight;
-    int x;
-    int y;
-    int z;
+    float x;
+    float y;
+    float z;
+    float increment;
+    float maxRange;
+    int iterations;
 
 };
 

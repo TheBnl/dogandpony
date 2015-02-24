@@ -26,7 +26,7 @@ void ofApp::setup(){
     sniffer = new ofSniffer();
     sniffer->startThread();
     
-    slideTitle = new ofSlideTitle("THE MAN IN THE MIDDLE");
+    slideTitle = new ofSlideTitle("THE MAN IN THE MIDDLE", 750, 30);
 }
 
 //--------------------------------------------------------------
@@ -53,6 +53,7 @@ void ofApp::draw() {
     
     slideTitle->draw();
     
+    ofSetColor( 255, 255, 255, 255 );
     ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );
     ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), 10, 30 );
     

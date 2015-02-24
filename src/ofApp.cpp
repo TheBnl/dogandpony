@@ -14,7 +14,7 @@ void ofApp::setup(){
     msTimer->setup( 300, true );
     oneSecondTimer->setup( 1000, true );
     twentySecondTimer->setup( 20000, true );
-    twohundredSecondTimer->setup( 200000, false ); // destroy app after 200 seconds
+    twohundredSecondTimer->setup( 200000, false );
     
     msTimer->startTimer();
     oneSecondTimer->startTimer();
@@ -30,7 +30,9 @@ void ofApp::setup(){
     std::vector<string> titles;
     titles.push_back("THE MAN IN THE MIDDLE");
     titles.push_back("THE MAN IN THE MIDDLE");
-    slideTitle = new ofSlideTitle(titles, 750, 30);
+    slideTitle = new ofSlideTitle(titles);
+    
+    slideImage = new ofSlideImage("testImages/image.png");
 }
 
 //--------------------------------------------------------------
@@ -43,19 +45,21 @@ void ofApp::update(){
     sniffer->update();
     sniffer->unlock();
     slideTitle->update();
+    slideImage->update();
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
     
-    
     sniffer->draw( 10, ofGetHeight() - 20 );
     
     spinner->draw( ofGetWidth() - 10, ofGetHeight() - 5 );
     progressBar->draw( 48, ofGetHeight() - 5 );
-    slideIndicator->draw( 0, ofGetHeight() - 5 );
+    slideIndicator->draw( 2, ofGetHeight() - 5 );
     
     slideTitle->draw();
+    slideImage->draw();
     
     ofSetColor( 255, 255, 255, 255 );
     ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );

@@ -5,8 +5,6 @@ ofAnimatedImage::ofAnimatedImage(string fileName, int _x, int _y)
     image.loadImage(fileName);
     imageWidth = image.getWidth();
     imageHeight = image.getHeight();
-    //x = _x;
-    //y = _y;
     
     x = ofRandom(0, ofGetWidth());
     y = ofRandom(0, ofGetHeight());

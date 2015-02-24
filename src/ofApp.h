@@ -9,6 +9,7 @@
 #include "ofSniffer.h"
 #include "ofAnimatedImage.h"
 #include "ofSlideTitle.h"
+#include "ofSlideImage.h"
 
 class ofApp : public ofBaseApp {
 
@@ -41,4 +42,6 @@ class ofApp : public ofBaseApp {
         ofSculptureViewer *sculptureViewer;
         ofSniffer *sniffer;
         ofSlideTitle *slideTitle;
+        ofSlideImage *slideImage;
+    
 };

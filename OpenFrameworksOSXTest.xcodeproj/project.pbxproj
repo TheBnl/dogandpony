@@ -19,6 +19,7 @@
 		2103EAAF1A9BE999005FCC2D /* ofxAnimatableOfColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAA91A9BE999005FCC2D /* ofxAnimatableOfColor.cpp */; };
 		2103EAB01A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2103EAAB1A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp */; };
 		21508EC61A93C32800C2D8CE /* ofSniffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21508EC41A93C32800C2D8CE /* ofSniffer.cpp */; };
+		21ADB2621A9D143B0056B5C6 /* ofSlideImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21ADB2601A9D143B0056B5C6 /* ofSlideImage.cpp */; };
 		21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E771A8A659200161C31 /* ofSpinner.cpp */; };
 		21D89E801A8B9BF700161C31 /* ofxTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */; };
 		21D89E831A8BD0E000161C31 /* ofProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D89E811A8BD0E000161C31 /* ofProgressBar.cpp */; };
@@ -118,6 +119,9 @@
 		2103EAAC1A9BE999005FCC2D /* ofxAnimatableOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxAnimatableOfPoint.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableOfPoint.h; sourceTree = "<group>"; };
 		21508EC41A93C32800C2D8CE /* ofSniffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSniffer.cpp; sourceTree = "<group>"; };
 		21508EC51A93C32800C2D8CE /* ofSniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSniffer.h; sourceTree = "<group>"; };
+		21ADB25F1A9CE7800056B5C6 /* ofxFboBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxFboBlur.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxFboBlur/src/ofxFboBlur.h; sourceTree = "<group>"; };
+		21ADB2601A9D143B0056B5C6 /* ofSlideImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSlideImage.cpp; sourceTree = "<group>"; };
+		21ADB2611A9D143B0056B5C6 /* ofSlideImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSlideImage.h; sourceTree = "<group>"; };
 		21D89E771A8A659200161C31 /* ofSpinner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofSpinner.cpp; sourceTree = "<group>"; };
 		21D89E781A8A659200161C31 /* ofSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofSpinner.h; sourceTree = "<group>"; };
 		21D89E7E1A8B9BF700161C31 /* ofxTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTimer.cpp; sourceTree = "<group>"; };
@@ -324,6 +328,22 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		21ADB25D1A9CE75D0056B5C6 /* ofxFboBlur */ = {
+			isa = PBXGroup;
+			children = (
+				21ADB25E1A9CE7670056B5C6 /* src */,
+			);
+			name = ofxFboBlur;
+			sourceTree = "<group>";
+		};
+		21ADB25E1A9CE7670056B5C6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				21ADB25F1A9CE7800056B5C6 /* ofxFboBlur.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		21D89E711A8A62E900161C31 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +492,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				21ADB25D1A9CE75D0056B5C6 /* ofxFboBlur */,
 				2103EAA31A9BE974005FCC2D /* ofxAnimatable */,
 				2103EA9F1A9BE69A005FCC2D /* ofxBlurShader */,
 				21D89E8F1A8DF5AD00161C31 /* ofxObjLoader */,
@@ -567,6 +588,8 @@
 				21D89E851A8BDA0B00161C31 /* ofSlideIndicator.h */,
 				21D89E881A8D0D1E00161C31 /* ofSculptureViewer.cpp */,
 				21D89E891A8D0D1E00161C31 /* ofSculptureViewer.h */,
+				21ADB2601A9D143B0056B5C6 /* ofSlideImage.cpp */,
+				21ADB2611A9D143B0056B5C6 /* ofSlideImage.h */,
 				2103EA9C1A9BCAEA005FCC2D /* ofSlideTitle.cpp */,
 				2103EA9D1A9BCAEA005FCC2D /* ofSlideTitle.h */,
 				21508EC41A93C32800C2D8CE /* ofSniffer.cpp */,
@@ -750,6 +773,7 @@
 				21D89E861A8BDA0B00161C31 /* ofSlideIndicator.cpp in Sources */,
 				2103EAB01A9BE999005FCC2D /* ofxAnimatableOfPoint.cpp in Sources */,
 				21D89E791A8A659200161C31 /* ofSpinner.cpp in Sources */,
+				21ADB2621A9D143B0056B5C6 /* ofSlideImage.cpp in Sources */,
 				21D89E971A8DF5FA00161C31 /* ofxObjLoader.cpp in Sources */,
 				2103EAA21A9BE6B4005FCC2D /* ofxBlurShader.cpp in Sources */,
 				456A6BD7B4A5718FECEEF1D7 /* ofxAssimpAnimation.cpp in Sources */,

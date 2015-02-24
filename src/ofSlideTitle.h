@@ -8,22 +8,22 @@ class ofSlideTitle {
   
 public:
     
-    ofSlideTitle(string text, int _iterations, float _maxRange);
+    ofSlideTitle(std::vector<string> titles, int iterations, float maxRange);
     
     void update();
     void draw();
     
 private:
     
-    string text;
+    std::vector<string> titles;
+    std::vector<float> zIndexes;
+    std::vector<float> increments;
+    std::vector<float> randomIterations;
+    std::vector<float> randomRanges;
+    
     ofTrueTypeFont titleFont;
     ofPlanePrimitive titlePlane;
     ofPlanePrimitive titleShadow;
-    float titleWidth;
-    float titleHeight;
-    float x;
-    float y;
-    float z;
     float increment;
     float maxRange;
     int iterations;

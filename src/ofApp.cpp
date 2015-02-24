@@ -3,7 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    //ofBackground(0, 0, 0);
+    ofBackground(0, 0, 0);
+    glEnable(GL_DEPTH_TEST);
     
     msTimer = new ofxTimer();
     oneSecondTimer = new ofxTimer();
@@ -26,7 +27,10 @@ void ofApp::setup(){
     sniffer = new ofSniffer();
     sniffer->startThread();
     
-    slideTitle = new ofSlideTitle("THE MAN IN THE MIDDLE", 750, 30);
+    std::vector<string> titles;
+    titles.push_back("THE MAN IN THE MIDDLE");
+    titles.push_back("THE MAN IN THE MIDDLE");
+    slideTitle = new ofSlideTitle(titles, 750, 30);
 }
 
 //--------------------------------------------------------------

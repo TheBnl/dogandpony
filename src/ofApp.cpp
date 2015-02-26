@@ -24,29 +24,23 @@ void ofApp::setup(){
     spinner = new ofSpinner();
     progressBar = new ofProgressBar( twentySecondTimer->getTimeLeftInMillis() );
     slideIndicator = new ofSlideIndicator( 10 );
+    slideManager = new ofSlideManager();
+    
     sniffer = new ofSniffer();
     sniffer->startThread();
-    
-    std::vector<string> titles;
-    titles.push_back("THE MAN IN THE MIDDLE");
-    titles.push_back("THE MAN IN THE MIDDLE");
-    slideTitle = new ofSlideTitle(titles);
-    
-    slideImage = new ofSlideImage("testImages/image.png");
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-    spinner->update( oneSecondTimer->getTimeLeftInMillis() );
-    progressBar->update( twentySecondTimer->getTimeLeftInMillis() );
-    slideIndicator->update( twentySecondTimer->getTimeLeftInMillis() );
     sniffer->lock();
     sniffer->update();
     sniffer->unlock();
-    slideTitle->update();
-    slideImage->update();
     
+    spinner->update( oneSecondTimer->getTimeLeftInMillis() );
+    progressBar->update( twentySecondTimer->getTimeLeftInMillis() );
+    slideIndicator->update( twentySecondTimer->getTimeLeftInMillis() );
+    slideManager->update( twentySecondTimer->getTimeLeftInMillis() );
 }
 
 //--------------------------------------------------------------
@@ -57,18 +51,16 @@ void ofApp::draw() {
     spinner->draw( ofGetWidth() - 10, ofGetHeight() - 5 );
     progressBar->draw( 48, ofGetHeight() - 5 );
     slideIndicator->draw( 2, ofGetHeight() - 5 );
-    
-    slideTitle->draw();
-    slideImage->draw();
+    slideManager->draw();
     
     ofSetColor( 255, 255, 255, 255 );
     ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );
     ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), 10, 30 );
-    
 }
 
 //--------------------------------------------------------------
 void ofApp::exit() {
+    
     cout << "quiting app";
     sniffer->stopThread();
 }

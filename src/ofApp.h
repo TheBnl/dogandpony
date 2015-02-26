@@ -5,11 +5,8 @@
 #include "ofSpinner.h"
 #include "ofProgressBar.h"
 #include "ofSlideIndicator.h"
-#include "ofSculptureViewer.h"
 #include "ofSniffer.h"
-#include "ofAnimatedImage.h"
-#include "ofSlideTitle.h"
-#include "ofSlideImage.h"
+#include "ofSlideManager.h"
 
 class ofApp : public ofBaseApp {
 
@@ -39,9 +36,7 @@ class ofApp : public ofBaseApp {
         ofSpinner *spinner;
         ofProgressBar *progressBar;
         ofSlideIndicator *slideIndicator;
-        ofSculptureViewer *sculptureViewer;
         ofSniffer *sniffer;
-        ofSlideTitle *slideTitle;
-        ofSlideImage *slideImage;
+        ofSlideManager *slideManager;
     
 };

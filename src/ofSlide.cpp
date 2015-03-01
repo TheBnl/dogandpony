@@ -1,19 +1,26 @@
 #include "ofSlide.h"
 
-ofSlide::ofSlide(std::vector<string> titles, string fileName)
+ofSlide::ofSlide(std::vector<string> titles, string _fileName)
 {
+    fileName = _fileName;
     slideTitle = new ofSlideTitle(titles);
-    slideImage = new ofSlideImage(fileName);
+    if (!fileName.empty()) {
+        slideImage = new ofSlideImage(fileName);
+    }
 }
 
 void ofSlide::update()
 {
     slideTitle->update();
-    slideImage->update();
+    if (!fileName.empty()) {
+        slideImage->update();
+    }
 }
 
 void ofSlide::draw()
 {
     slideTitle->draw();
-    slideImage->draw();
+    if (!fileName.empty()) {
+        slideImage->draw();
+    }
 }

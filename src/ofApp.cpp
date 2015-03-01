@@ -54,13 +54,12 @@ void ofApp::draw() {
     slideManager->draw();
     
     ofSetColor( 255, 255, 255, 255 );
-    ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), 10, 15 );
-    ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), 10, 30 );
+    ofDrawBitmapString( ofToString( twohundredSecondTimer->getTimeLeftInSeconds() ), ofGetWidth() - 65, 15 );
+    ofDrawBitmapString( ofToString( twentySecondTimer->getTimeLeftInSeconds() ), ofGetWidth() - 65, 30 );
 }
 
 //--------------------------------------------------------------
 void ofApp::exit() {
-    
     cout << "quiting app";
     sniffer->stopThread();
 }

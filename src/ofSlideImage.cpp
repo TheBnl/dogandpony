@@ -13,7 +13,7 @@ ofSlideImage::ofSlideImage(string fileName)
     imagePlane.resizeToTexture(imageTexture);
     
     increment = 0;
-    randomRange = ofRandom(20, 50);
+    randomRange = ofRandom(10, 30);
     randomIteration = ofRandom(400, 750);
 }
 

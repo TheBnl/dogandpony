@@ -5,104 +5,130 @@ ofSlideManager::ofSlideManager()
     currentSlide = 1;
     
     /*
-     * Create slide 1
+     * THE MAN IN THE MIDDLE
      *
-     * Introductie over het onderwerp, veel tijd kwijt aan het opstarten van de tcpdump stream
+     * Voorstellen, veel tijd kwijt aan het opstarten van de tcpdump stream.
+     *
+     * Hello, my name is Bram de Leeuw and i want to be your man in the middle.
+     * Eventueel beginnen aan slide 2
      */
     std::vector<string> slideOneTitles;
     slideOneTitles.push_back("THE MAN IN THE MIDDLE");
     slideOneTitles.push_back("THE MAN IN THE MIDDLE");
-    slideOne = new ofSlide(slideOneTitles, "testImages/image.png");
+    slideOne = new ofSlide(slideOneTitles, "");
     
     /*
-     * Create slide 2
+     * WE ARE DEPENDENT
      *
-     * Notes
+     * Our lives have become dependent of the connection between our laptops, phones, tablets and even in the near future between or washing machines, 
+     * kitchen appliances and house hold robotics. These devices keep a constant connection to the internet while collecting massive amounts of data. 
+     * This data flows through the air to a wifi router connecting it to fiber optic cables sending it to data centers all over the world.
      */
     std::vector<string> slideTwoTitles;
-    slideTwoTitles.push_back("DIT IS DE");
-    slideTwoTitles.push_back("TWEEDE SLIDE");
-    slideTwo = new ofSlide(slideTwoTitles, "testImages/image.png");
+    slideTwoTitles.push_back("WE ARE");
+    slideTwoTitles.push_back("DEPENDENT");
+    slideTwo = new ofSlide(slideTwoTitles, "02.png");
     
     /*
-     * Create slide 3
+     * WHAT IS A MAN IN THE MIDDLE
      *
-     * Notes
+     * A man in the middle sits in between the connection from your device to the wireless router. 
+     * Or as NSA spies do, between the Internet Service Provider and the datacenters.
+     * But i’m not going to swerve on that topic. I want to be your Man in the Middle,
+     * and i’m going to sit in between your device and the connection you requested.
      */
     std::vector<string> slideThreeTitles;
-    slideThreeTitles.push_back("DIT IS DE");
-    slideThreeTitles.push_back("DERDE SLIDE");
-    slideThree = new ofSlide(slideThreeTitles, "testImages/image.png");
+    slideThreeTitles.push_back("WHAT IS A");
+    slideThreeTitles.push_back("MAN IN THE MIDDLE");
+    slideThree = new ofSlide(slideThreeTitles, "03.png");
 
     /*
-     * Create slide 4
+     * DON'T BE EVIL
      *
-     * Notes
+     * But do not worry that i will steal your identity by Session Hijacking you, 
+     * or steal you passwords by removing the ssl encryption with SSL Strip.
+     * No, i want to reverse hack you. I want to make this invisible process visible.
+     * And explain it in an accessible and fun way.
      */
     std::vector<string> slideFourTitles;
-    slideFourTitles.push_back("DIT IS DE");
-    slideFourTitles.push_back("VIERDE SLIDE");
-    slideFour = new ofSlide(slideFourTitles, "testImages/image.png");
+    slideFourTitles.push_back("DON\'T");
+    slideFourTitles.push_back("BE");
+    slideFourTitles.push_back("EVIL");
+    slideFour = new ofSlide(slideFourTitles, "04.png");
     
     /*
-     * Create slide 5
+     * HI I WANT TO CONNECT TO THE HOME NETWORK!
      *
-     * Notes
+     * I have a device in possession capable of doing a lot of evil. But i'm not going to use it for evil. 
+     * This device is called a WiFi Pineapple, and makes network hacking a piece of cake.
+     * First of all your phone’s or any other wifi capable device is constantly looking for networks it has been previously connected to.
      */
     std::vector<string> slideFiveTitles;
-    slideFiveTitles.push_back("DIT IS DE");
-    slideFiveTitles.push_back("VIJFDE SLIDE");
-    slideFive = new ofSlide(slideFiveTitles, "testImages/image.png");
+    slideFiveTitles.push_back("ARE YOU THE");
+    slideFiveTitles.push_back("HOME NETWORK?");
+    slideFive = new ofSlide(slideFiveTitles, "05.png");
     
     /*
-     * Create slide 6
+     * HI YEAH SURE I'M THE HOME NETWORK
      *
-     * Notes
+     * It does this by constantly shouting out the network name like “hi i want to connect to the home network! are you the home network?”
+     * And my device responds with “hi yeah sure i’m the home network” and so a connection is established while you do not even know it happend.
      */
     std::vector<string> slideSixTitles;
-    slideSixTitles.push_back("DIT IS DE");
-    slideSixTitles.push_back("ZESDE SLIDE");
-    slideSix = new ofSlide(slideSixTitles, "testImages/image.png");
+    slideSixTitles.push_back("HI YEAH SURE");
+    slideSixTitles.push_back("I\'M THE HOME NETWORK");
+    slideSix = new ofSlide(slideSixTitles, "06.png");
     
     /*
-     * Create slide 7
+     * CONNECT, ALTER, SEND BACK
      *
-     * Notes
+     * After the connection is established i can see the data flowing trough my device, a user requests a page and i could send something else back.
+     * At this point the user becomes part of my intervention.
+     * I want to create a work that invites or actually forces viewer into participate,
+     * by partisapating i want to educate the viewer about the networking / hacking proceses that are happening.
      */
     std::vector<string> slideSevenTitles;
-    slideSevenTitles.push_back("DIT IS DE");
-    slideSevenTitles.push_back("ZEVENDE SLIDE");
-    slideSeven = new ofSlide(slideSevenTitles, "testImages/image.png");
+    slideSevenTitles.push_back("CONNECT");
+    slideSevenTitles.push_back("ALTER");
+    slideSevenTitles.push_back("SEND BACK");
+    slideSeven = new ofSlide(slideSevenTitles, "");
     
     /*
-     * Create slide 8
+     * PIRATES AND PEERS
      *
-     * Notes
+     * Last Februari i went to the Transmediale in Berlin, for me it was a good opportunity to see what other artist,
+     * scientist and thinkers were doing with the rapid developing field of technology.
+     * What for me especially was nice to see, where the artist impressions related to the subject.
+     * A project that struck me was the pirate cinema, this is an example of a project that shows in a accessible way
+     * how the hidden process of peer to peer networking compute.
      */
     std::vector<string> slideEightTitles;
-    slideEightTitles.push_back("DIT IS DE");
-    slideEightTitles.push_back("ACHTSTE SLIDE");
-    slideEight = new ofSlide(slideEightTitles, "testImages/image.png");
+    slideEightTitles.push_back("PIRATES");
+    slideEightTitles.push_back("AND");
+    slideEightTitles.push_back("PEERS");
+    slideEight = new ofSlide(slideEightTitles, "08.jpg");
     
     /*
-     * Create slide 9
+     * ENLIGHTEND L33T HAX0RS
      *
-     * Notes
+     * The same simple way the pirate cinema explains how peer to peer networks work i want to use to explain how hacking works. 
+     * It does not mean that i will end up with an installation looking like that of the pirate cinema but i hope the viewer 
+     * will leave my exhibition a little bit more enlightened in the subject of hacking than when they entered.
      */
     std::vector<string> slideNineTitles;
-    slideNineTitles.push_back("DIT IS DE");
-    slideNineTitles.push_back("NEGENDE SLIDE");
-    slideNine = new ofSlide(slideNineTitles, "testImages/image.png");
+    slideNineTitles.push_back("ENLIGHTEND");
+    slideNineTitles.push_back("L33T HAX0RS");
+    slideNine = new ofSlide(slideNineTitles, "");
     
     /*
-     * Create slide 10
+     * THANKS YOU FOR LISTENING!
      *
-     * Notes
+     * I want to thank you al for listening and i hope to see you all in July!
      */
     std::vector<string> slideTenTitles;
-    slideTenTitles.push_back("DIT IS DE");
-    slideTenTitles.push_back("TIENDE SLIDE");
-    slideTen = new ofSlide(slideTenTitles, "testImages/image.png");
+    slideTenTitles.push_back("ALL YOUR DATA");
+    slideTenTitles.push_back("BELONGS TO ME!");
+    slideTen = new ofSlide(slideTenTitles, "");
 
 }
 
@@ -143,6 +169,10 @@ void ofSlideManager::update(float time)
             break;
         case 10:
             slideTen->update();
+            break;
+        case 11:
+            cout << "TERMINATE APP!" << endl;
+            std::exit(0);
             break;
             
         default:

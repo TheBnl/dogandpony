@@ -21,6 +21,10 @@ private:
     std::vector<float> increments;
     std::vector<float> randomIterations;
     std::vector<float> randomRanges;
+    
+    //std::vector<string> titlesTest;
+    //ofShader shaderBlurX;
+    //ofShader shaderBlurY;
 
 };
 

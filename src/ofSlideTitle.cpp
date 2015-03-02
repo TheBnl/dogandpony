@@ -4,6 +4,21 @@ ofSlideTitle::ofSlideTitle(std::vector<string> _titles)
 {
     titles = _titles;
     
+    /*
+    #ifdef TARGET_OPENGLES
+        shaderBlurX.load("shadersES2/shaderBlurX");
+        shaderBlurY.load("shadersES2/shaderBlurY");
+    #else
+        if(ofIsGLProgrammableRenderer()){
+            shaderBlurX.load("shadersGL3/shaderBlurX");
+            shaderBlurY.load("shadersGL3/shaderBlurY");
+        }else{
+            shaderBlurX.load("shadersGL2/shaderBlurX");
+            shaderBlurY.load("shadersGL2/shaderBlurY");
+        }
+    #endif
+    */
+    
     for (int i = 0; i < titles.size(); i++) {
         
         float randomRange = ofRandom(20, 50);//rand() % (50 - 20) + 20;
@@ -14,6 +29,7 @@ ofSlideTitle::ofSlideTitle(std::vector<string> _titles)
         randomIterations.push_back(randomIteration);
         randomRanges.push_back(randomRange);
     }
+    
 }
 
 
@@ -48,6 +64,38 @@ void ofSlideTitle::draw()
         thisTitlePlane.setPosition( ofGetWidth() / 2 + 5,  y, zIndexes[i] - 0.1 );
         thisTitleShadowPlane.set( width + 60, height * 2 + 5 );
         thisTitleShadowPlane.setPosition( ofGetWidth() / 2 + 5, y, zIndexes[i] - 0.2 );
+        
+        /*
+        float blur = 60;//ofMap(20, 0, ofGetWidth(), 0, 10, true);
+        
+        //----------------------------------------------------------
+        fboBlurOnePass.begin();
+        
+        shaderBlurX.begin();
+        shaderBlurX.setUniform1f("blurAmnt", blur);
+        
+        thisTitleShadowPlane.draw();
+        
+        shaderBlurX.end();
+        
+        fboBlurOnePass.end();
+        
+        //----------------------------------------------------------
+        fboBlurTwoPass.begin();
+        
+        shaderBlurY.begin();
+        shaderBlurY.setUniform1f("blurAmnt", blur);
+        
+        fboBlurOnePass.draw(0, 0);
+        
+        shaderBlurY.end();
+        
+        fboBlurTwoPass.end();
+        
+        //----------------------------------------------------------
+        ofSetColor(ofColor::white);
+        fboBlurTwoPass.draw(0, 0);
+        */
         
         ofSetColor( 0, 0, 0, 200 );
         thisTitleShadowPlane.draw();

@@ -91,7 +91,7 @@ ofSlideManager::ofSlideManager()
     slideSevenTitles.push_back("CONNECT");
     slideSevenTitles.push_back("ALTER");
     slideSevenTitles.push_back("SEND BACK");
-    slideSeven = new ofSlide(slideSevenTitles, "");
+    slideSeven = new ofSlide(slideSevenTitles, "07.png");
     
     /*
      * PIRATES AND PEERS
@@ -106,7 +106,7 @@ ofSlideManager::ofSlideManager()
     slideEightTitles.push_back("PIRATES");
     slideEightTitles.push_back("AND");
     slideEightTitles.push_back("PEERS");
-    slideEight = new ofSlide(slideEightTitles, "08.jpg");
+    slideEight = new ofSlide(slideEightTitles, "08.png");
     
     /*
      * ENLIGHTEND L33T HAX0RS
@@ -118,7 +118,7 @@ ofSlideManager::ofSlideManager()
     std::vector<string> slideNineTitles;
     slideNineTitles.push_back("ENLIGHTEND");
     slideNineTitles.push_back("L33T HAX0RS");
-    slideNine = new ofSlide(slideNineTitles, "");
+    slideNine = new ofSlide(slideNineTitles, "09.png");
     
     /*
      * THANKS YOU FOR LISTENING!
